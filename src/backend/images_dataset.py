@@ -1,8 +1,8 @@
 import pandas as pd
 
-file_name='src/data/images_dataset.csv'
+file_name='src/backend/data/images_dataset.csv'
 
-tsc_file='src/data/photos.tsv000'
+tsc_file='src/backend/data/photos.tsv000'
 
 df=pd.read_csv(tsc_file,sep='\t',header=0)
 dataset=df.to_csv(file_name)

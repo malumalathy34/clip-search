@@ -69,5 +69,6 @@ def add_data_to_database(data_frame):
            } ],
              namespace="image-search-dataset"
         )
-df = images_dataset.get_df(1636,1638)
+        logger.info("Successfully added image to Pinecone index.")
+df = images_dataset.get_df(2500,3000)
 add_data_to_database(df)
